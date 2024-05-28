@@ -11,37 +11,40 @@
         </nav>
     </header>
 
-    <article class="home__info">
+    <article [class]="'home__info home__info--'+(state ? 'focused' : '')" (click)="state=false">
         <section class="home__info__content">
             <a class="home__info__content__img">
                 <img src="foto.png" alt="">
             </a>
             <ul class="home__info__content__description">
-                <li class="home__info__content__description__card--title">Andres Diaz</li>
-                <li class="home__info__content__description__card">Cargo:</li>
-                <li class="home__info__content__description__card">Edad:</li>
-                <li class="home__info__content__description__card">Estado:</li>
-                <li class="home__info__content__description__card">Experiencia:</li>
+                <li class="home__info__content__description__card--title">Andres Diaz {{state}}</li>
+                <ng-container *ngIf="!state">
+                    <li class="home__info__content__description__card">Cargo:</li>
+                    <li class="home__info__content__description__card">Edad:</li>
+                    <li class="home__info__content__description__card">Estado:</li>
+                    <li class="home__info__content__description__card">Experiencia:</li>
+                </ng-container>
             </ul>
-            <ul class="home__info__content__nav">
+            <ul class="home__info__content__nav" *ngIf="!state">
                 <li>
-                    
+                    {{state}}
                 </li>
                 <li>
-                    
+
                 </li>
                 <li>
-                    
+
                 </li>
                 <li>
-                    
+
                 </li>
             </ul>
         </section>
-        <a class="home__info__download">Descargar hoja de vida</a>
+        <a class="home__info__download" *ngIf="!state">Descargar hoja de vida</a>
     </article>
     <article class="home__content-cards">
-        <section class="home__content-cards__card">
+        <section [class]="'home__content-cards__card home__content-cards__card--'+(state ? 'focused' : '')"
+            (click)="setViewOpen()">
             <a class="home__content-cards__card__counter">3</a>
             <a class="home__content-cards__card__img">
                 <img src="icon-iniciar-trabajo-colaborativo.svg" alt="">
