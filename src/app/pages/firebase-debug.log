@@ -1,0 +1,21 @@
+[debug] [2024-05-28T17:24:01.752Z] ----------------------------------------------------------------------
+[debug] [2024-05-28T17:24:01.759Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LENOVO-E460\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-05-28T17:24:01.761Z] CLI Version:   13.10.2
+[debug] [2024-05-28T17:24:01.762Z] Platform:      win32
+[debug] [2024-05-28T17:24:01.762Z] Node Version:  v20.13.1
+[debug] [2024-05-28T17:24:01.762Z] Time:          Tue May 28 2024 12:24:01 GMT-0500 (hora estándar de Colombia)
+[debug] [2024-05-28T17:24:01.762Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-28T17:24:01.780Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-28T17:24:01.781Z] > authorizing via signed-in user (diazccx@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\LENOVO-E460\Desktop\Andres Diaz\cosas de andres\proyectos\portfolio\src\app\pages
+
