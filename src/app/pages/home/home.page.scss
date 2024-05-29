@@ -20,7 +20,7 @@
         max-height: 23rem;
         margin: 1rem;
         position: relative;
-        transition: all ease-out 0.2s;
+        transition: all ease-out .2s;
         &__content {
             height: 100%;
             border-radius: 2rem;
@@ -43,9 +43,10 @@
                 box-sizing: border-box;
                 transition: all ease-out .2s;
                 img {
+                    transition: all ease-out .2s;
                     border-radius: 50%;
-                    width: 100%;
-
+                    width: 11rem;
+                    height: 11rem;
                     background-color: gray;
                 }
             }
@@ -54,9 +55,11 @@
                 display: flex;
                 flex-direction: column;
                 flex-grow: 1;
+                overflow: hidden;
                 &__card {
                     padding: 0.5rem 0.5rem 0.5rem 2.5rem;
                     border-left: 1px solid gray;
+                    animation: appear .5s;
                     &--title {
                         transition: all ease-out .2s;
                         font-size: 2rem;
@@ -66,6 +69,8 @@
                 }
             }
             &__nav {
+                animation: appear .5s;
+
                 width: 30%;
                 display: flex;
                 flex-wrap: wrap;

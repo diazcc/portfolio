@@ -18,29 +18,33 @@
             </a>
             <ul class="home__info__content__description">
                 <li class="home__info__content__description__card--title">Andres Diaz {{state}}</li>
-                <ng-container *ngIf="!state">
+                @if(!state){ 
                     <li class="home__info__content__description__card">Cargo:</li>
                     <li class="home__info__content__description__card">Edad:</li>
                     <li class="home__info__content__description__card">Estado:</li>
                     <li class="home__info__content__description__card">Experiencia:</li>
-                </ng-container>
+                }
             </ul>
-            <ul class="home__info__content__nav" *ngIf="!state">
-                <li>
-                    {{state}}
-                </li>
-                <li>
+            <ul class="home__info__content__nav" >
+                @if(!state){ 
+                    <li>
 
-                </li>
-                <li>
-
-                </li>
-                <li>
-
-                </li>
+                    </li>
+                    <li>
+    
+                    </li>
+                    <li>
+    
+                    </li>
+                    <li>
+    
+                    </li>
+                }
             </ul>
         </section>
-        <a class="home__info__download" *ngIf="!state">Descargar hoja de vida</a>
+        @if(!state){
+            <a class="home__info__download" >Descargar hoja de vida</a>
+        }
     </article>
     <article class="home__content-cards">
         <section [class]="'home__content-cards__card home__content-cards__card--'+(state ? 'focused' : '')"
