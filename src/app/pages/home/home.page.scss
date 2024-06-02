@@ -135,7 +135,7 @@
                     align-items: center;
                     padding: 0rem;
                     box-sizing: border-box;
-                    
+
                     img {
                         border-radius: 50%;
                         height: 50px;
@@ -157,7 +157,7 @@
                     background-color: rgb(223, 223, 223);
                 }
             }
-            
+
         }
     }
     &__content-cards {
@@ -309,18 +309,6 @@
             height: max-content;
 
             &__card {
-                min-height: 9rem;
-                padding: 1rem;
-                border: 1px solid #000000;
-                border-radius: 2rem;
-                background-color: white;
-                filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.438));
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-                transition: all ease-out 0.2s;
-                cursor: pointer;
                 &__counter {
                     width: 6rem;
                     height: 3rem;
