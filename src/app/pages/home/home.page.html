@@ -49,11 +49,69 @@
     <article class="home__content-cards">
         <section [class]="'home__content-cards__card home__content-cards__card--'+(state ? 'focused' : '')"
             (click)="setViewOpen()">
-            <a class="home__content-cards__card__counter">3</a>
-            <a class="home__content-cards__card__img">
-                <img src="icon-iniciar-trabajo-colaborativo.svg" alt="">
-            </a>
-            <p class="home__content-cards__card__title">Proyectos</p>
+            @if(!state){
+                <a class="home__content-cards__card__counter">3</a>
+            }
+            <header class="home__content-cards__card__header">
+                <a class="home__content-cards__card__header__img">
+                    <img src="icon.svg" alt="">
+                </a>
+                <p class="home__content-cards__card__header__title">Proyectos</p>
+            </header>
+            @if(state){
+                <a class="home__content-cards__card__counter">3</a>
+                <ul class="home__content-cards__card__wrapper">
+                    <li class="home__content-cards__card__wrapper__card">
+                        <h3>
+                            Docugate
+                        </h3>
+                        <p>Img</p>
+                        <p>Lorem ips magnam,rum corporis. Id fugit maiores pariatur.</p>
+                        <p>Icon</p>
+                    </li>
+                    <li class="home__content-cards__card__wrapper__card">
+                        <h3>
+                            Docugate
+                        </h3>
+                        <p>Img</p>
+                        <p>Lorem ipsum magnam,rum corporis. Id fugit maiores pariatur.</p>
+                        <p>Icon</p>
+                    </li>
+                    <li class="home__content-cards__card__wrapper__card">
+                        <h3>
+                            Docugate
+                        </h3>
+                        <p>Img</p>
+                        <p>Lorem ips magnam,rum corporis. Id fugit maiores pariatur.</p>
+                        <p>Icon</p>
+                    </li>
+                    <li class="home__content-cards__card__wrapper__card">
+                        <h3>
+                            Docugate
+                        </h3>
+                        <p>Img</p>
+                        <p>Lorem ips magnam,rum corporis. Id fugit maiores pariatur.</p>
+                        <p>Icon</p>
+                    </li>
+
+                    <li class="home__content-cards__card__wrapper__card">
+                        <h3>
+                            Docugate
+                        </h3>
+                        <p>Img</p>
+                        <p>Lorem ips magnam,rum corporis. Id fugit maiores pariatur.</p>
+                        <p>Icon</p>
+                    </li>
+                    <li class="home__content-cards__card__wrapper__card">
+                        <h3>
+                            Docugate
+                        </h3>
+                        <p>Img</p>
+                        <p>Lorem ips magnam,rum corporis. Id fugit maiores pariatur.</p>
+                        <p>Icon</p>
+                    </li>
+                </ul>
+            }
         </section>
         <section class="home__content-cards__card">
             <a class="home__content-cards__card__counter">3</a>

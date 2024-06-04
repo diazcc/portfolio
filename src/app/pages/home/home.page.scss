@@ -13,6 +13,7 @@
         justify-content: space-between;
         padding-right: 2rem;
         border: 1px solid gray;
+        transition: all ea 0.2s;
     }
 
     &__info {
@@ -20,9 +21,10 @@
         max-height: 23rem;
         margin: 1rem;
         position: relative;
-        transition: all ease-out .2s;
+        transition: all ease-out 0.2s;
         &__content {
             height: 100%;
+            min-height: 10rem;
             border-radius: 2rem;
             border: 1px solid #000000;
             display: flex;
@@ -41,9 +43,9 @@
                 align-items: center;
                 padding: 1rem;
                 box-sizing: border-box;
-                transition: all ease-out .2s;
+                transition: all ease-out 0.2s;
                 img {
-                    transition: all ease-out .2s;
+                    transition: all ease-out 0.2s;
                     border-radius: 50%;
                     width: 11rem;
                     height: 11rem;
@@ -59,9 +61,9 @@
                 &__card {
                     padding: 0.5rem 0.5rem 0.5rem 2.5rem;
                     border-left: 1px solid gray;
-                    animation: appear .5s;
+                    animation: appear 0.5s;
                     &--title {
-                        transition: all ease-out .2s;
+                        transition: all ease-out 0.2s;
                         font-size: 2rem;
                         font-weight: bolder;
                         margin-bottom: 1rem;
@@ -69,7 +71,7 @@
                 }
             }
             &__nav {
-                animation: appear .5s;
+                animation: appear 0.5s;
 
                 width: 30%;
                 display: flex;
@@ -123,9 +125,11 @@
             margin: 1rem 0rem;
             cursor: pointer;
             .home__info__content {
-                padding: .5rem;
-                gap: .5rem;
-                transition: all ease-out .2s;
+                padding: 0.5rem;
+                min-height: auto;
+
+                gap: 0.5rem;
+                transition: all ease-out 0.2s;
                 &__img {
                     width: min-content;
                     height: 100%;
@@ -145,7 +149,7 @@
                     }
                 }
                 &__description {
-                    justify-content:center;
+                    justify-content: center;
                     &__card {
                         &--title {
                             font-size: 1.5rem;
@@ -153,11 +157,10 @@
                         }
                     }
                 }
-                &:hover{
+                &:hover {
                     background-color: rgb(223, 223, 223);
                 }
             }
-
         }
     }
     &__content-cards {
@@ -174,6 +177,7 @@
             flex: 1;
             min-width: 13rem;
             min-height: 17rem;
+            max-height: 17rem;
             padding: 1rem;
             border: 1px solid #000000;
             border-radius: 2rem;
@@ -185,6 +189,7 @@
             gap: 1rem;
             transition: all ease-out 0.2s;
             cursor: pointer;
+
             &__counter {
                 width: 6rem;
                 height: 3rem;
@@ -198,21 +203,26 @@
                 position: absolute;
                 border-radius: 1rem;
             }
-
-            &__img {
+            &__header {
                 flex-grow: 1;
                 display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 align-items: center;
-                justify-content: center;
-
-                img {
-                    height: 100px;
+                &__img {
+                    flex-grow: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        height: 6.6rem;
+                    }
                 }
-            }
-            &__title {
-                text-align: center;
-                font-size: 1.5rem;
-                font-weight: bolder;
+                &__title {
+                    text-align: center;
+                    font-size: 1.5rem;
+                    font-weight: bolder;
+                }
             }
 
             &:hover {
@@ -221,18 +231,69 @@
             }
 
             &--focused {
+                max-height: none;
                 position: absolute;
                 top: 0;
                 left: 0;
                 z-index: 1;
                 width: 100%;
+                padding: 1rem 2rem;
                 box-sizing: border-box;
                 filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
                 cursor: auto;
                 height: 100%;
+                gap: 1rem;
                 &:hover {
                     transform: scale(1);
                     filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+                }
+
+                .home__content-cards__card__header {
+                    flex-direction: row;
+                    flex-grow: unset;
+                    justify-content: flex-start;
+                    border-bottom: 2px solid #b5b5b5;
+                    height: 8.5rem;
+                    padding-bottom: 1rem;
+                    &__img {
+                        max-width: 11%;
+                    }
+                    &__title {
+                        font-size: 1.5rem;
+                        font-weight: bolder;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            &__wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem 1rem;
+                height: 100%;
+                animation: appear 0.2s;
+                &__card {
+                    padding: 1rem;
+                    border: 1px solid rgb(189 189 189);
+                    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.486));
+                    background-color: white;
+                    border-radius: 0.5rem;
+                    flex: 1;
+                    max-height: 260px;
+                    min-width: 260px;
+                    max-width: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    transition: all ease-out 0.2s;
+                    z-index: 1;
+                    cursor: pointer;
+                    &:hover {
+                        transform: scale(1.05);
+                        z-index: 2;
+                        filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+                    }
                 }
             }
         }
@@ -277,10 +338,12 @@
                         padding: 0.5rem 0.5rem 0.5rem 2.5rem;
                         border: none;
                         width: 30%;
-                        &--title {
-                            text-align: center;
-                            margin-bottom: 0rem;
-                            width: 100%;
+                        &__header {
+                            &--title {
+                                text-align: center;
+                                margin-bottom: 0rem;
+                                width: 100%;
+                            }
                         }
                     }
                 }
@@ -291,18 +354,33 @@
                     justify-content: center;
                     position: initial;
                     li {
-                        width: 50px;
-                        height: 50px;
+                        width: 40px;
+                        height: 40px;
                         &:last-child {
                             position: absolute;
-                            right: 2rem;
-                            top: 2rem;
+                            right: 1rem;
+                            top: 1rem;
                         }
                     }
                 }
             }
             &__download {
                 display: none;
+            }
+
+            &--focused {
+                .home__info__content {
+                    flex-direction: row;
+
+                    &__description {
+                        min-width: max-content;
+
+                        &__card {
+                            &--title {
+                            }
+                        }
+                    }
+                }
             }
         }
         &__content-cards {
@@ -322,26 +400,53 @@
                     position: absolute;
                     border-radius: 1rem;
                 }
-
-                &__img {
-                    flex-grow: 1;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    img {
-                        height: 100px;
+                &__header {
+                    &__img {
+                        flex-grow: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            height: 100px;
+                        }
                     }
-                }
-                &__title {
-                    text-align: center;
-                    font-size: 1.5rem;
-                    font-weight: bolder;
+                    &__title {
+                        text-align: center;
+                        font-size: 1.5rem;
+                        font-weight: bolder;
+                    }
                 }
 
                 &:hover {
-                    transform: scale(1.03);
-                    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.438));
+                    transform: scale(1);
+                    filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0));
+                }
+            }
+        }
+
+        &--focused {
+            .home__info__content {
+                gap: 1rem;
+                &__img {
+                    img {
+                        border-radius: 50%;
+                        height: 50px;
+                        width: 50px;
+
+                        background-color: gray;
+                    }
+                }
+                &__description {
+                    justify-content: center;
+                    &__card {
+                        &--title {
+                            font-size: 1.5rem;
+                            margin-bottom: 0rem;
+                        }
+                    }
+                }
+                &:hover {
+                    background-color: rgb(223, 223, 223);
                 }
             }
         }
