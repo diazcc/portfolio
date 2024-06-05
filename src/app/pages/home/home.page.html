@@ -17,100 +17,99 @@
                 <img src="foto.png" alt="">
             </a>
             <ul class="home__info__content__description">
-                <li class="home__info__content__description__card--title">Andres Diaz {{state}}</li>
-                @if(!state){ 
-                    <li class="home__info__content__description__card">Cargo:</li>
-                    <li class="home__info__content__description__card">Edad:</li>
-                    <li class="home__info__content__description__card">Estado:</li>
-                    <li class="home__info__content__description__card">Experiencia:</li>
+                <li class="home__info__content__description__card--title">Andres Diaz</li>
+                @if(!state){
+                <li class="home__info__content__description__card">Cargo:</li>
+                <li class="home__info__content__description__card">Edad:</li>
+                <li class="home__info__content__description__card">Estado:</li>
+                <li class="home__info__content__description__card">Experiencia:</li>
                 }
             </ul>
-            <ul class="home__info__content__nav" >
-                @if(!state){ 
-                    <li>
+            @if(!state){
+            <ul class="home__info__content__nav">
+                <li>
 
-                    </li>
-                    <li>
-    
-                    </li>
-                    <li>
-    
-                    </li>
-                    <li>
-    
-                    </li>
-                }
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
             </ul>
+            }
         </section>
         @if(!state){
-            <a class="home__info__download" >Descargar hoja de vida</a>
+        <a class="home__info__download">Descargar hoja de vida</a>
         }
     </article>
     <article class="home__content-cards">
         <section [class]="'home__content-cards__card home__content-cards__card--'+(state ? 'focused' : '')"
             (click)="setViewOpen()">
-            @if(!state){
-                <a class="home__content-cards__card__counter">3</a>
-            }
             <header class="home__content-cards__card__header">
                 <a class="home__content-cards__card__header__img">
                     <img src="icon.svg" alt="">
                 </a>
                 <p class="home__content-cards__card__header__title">Proyectos</p>
             </header>
+            @if(!state){
+            <a class="home__content-cards__card__counter">3</a>
+            }
             @if(state){
-                <a class="home__content-cards__card__counter">3</a>
-                <ul class="home__content-cards__card__wrapper">
-                    <li class="home__content-cards__card__wrapper__card">
-                        <h3>
-                            Docugate
-                        </h3>
-                        <p>Img</p>
-                        <p>Lorem ips magnam,rum corporis. Id fugit maiores pariatur.</p>
-                        <p>Icon</p>
-                    </li>
-                    <li class="home__content-cards__card__wrapper__card">
-                        <h3>
-                            Docugate
-                        </h3>
-                        <p>Img</p>
-                        <p>Lorem ipsum magnam,rum corporis. Id fugit maiores pariatur.</p>
-                        <p>Icon</p>
-                    </li>
-                    <li class="home__content-cards__card__wrapper__card">
-                        <h3>
-                            Docugate
-                        </h3>
-                        <p>Img</p>
-                        <p>Lorem ips magnam,rum corporis. Id fugit maiores pariatur.</p>
-                        <p>Icon</p>
-                    </li>
-                    <li class="home__content-cards__card__wrapper__card">
-                        <h3>
-                            Docugate
-                        </h3>
-                        <p>Img</p>
-                        <p>Lorem ips magnam,rum corporis. Id fugit maiores pariatur.</p>
-                        <p>Icon</p>
-                    </li>
+            <ul class="home__content-cards__card__wrapper">
+                <li class="home__content-cards__card__wrapper__card">
+                    <h3>
+                        Docugate
+                    </h3>
+                    <p>Img</p>
+                    <p>Lorem ips magnam,rum corporis. Id fugit maiores pariatur.</p>
+                    <p>Icon</p>
+                </li>
+                <li class="home__content-cards__card__wrapper__card">
+                    <h3>
+                        Docugate
+                    </h3>
+                    <p>Img</p>
+                    <p>Lorem ipsum magnam,rum corporis. Id fugit maiores pariatur.</p>
+                    <p>Icon</p>
+                </li>
+                <li class="home__content-cards__card__wrapper__card">
+                    <h3>
+                        Docugate
+                    </h3>
+                    <p>Img</p>
+                    <p>Lorem ips magnam,rum corporis. Id fugit maiores pariatur.</p>
+                    <p>Icon</p>
+                </li>
+                <li class="home__content-cards__card__wrapper__card">
+                    <h3>
+                        Docugate
+                    </h3>
+                    <p>Img</p>
+                    <p>Lorem ips magnam,rum corporis. Id fugit maiores pariatur.</p>
+                    <p>Icon</p>
+                </li>
 
-                    <li class="home__content-cards__card__wrapper__card">
-                        <h3>
-                            Docugate
-                        </h3>
-                        <p>Img</p>
-                        <p>Lorem ips magnam,rum corporis. Id fugit maiores pariatur.</p>
-                        <p>Icon</p>
-                    </li>
-                    <li class="home__content-cards__card__wrapper__card">
-                        <h3>
-                            Docugate
-                        </h3>
-                        <p>Img</p>
-                        <p>Lorem ips magnam,rum corporis. Id fugit maiores pariatur.</p>
-                        <p>Icon</p>
-                    </li>
-                </ul>
+                <li class="home__content-cards__card__wrapper__card">
+                    <h3>
+                        Docugate
+                    </h3>
+                    <p>Img</p>
+                    <p>Lorem ips magnam,rum corporis. Id fugit maiores pariatur.</p>
+                    <p>Icon</p>
+                </li>
+                <li class="home__content-cards__card__wrapper__card">
+                    <h3>
+                        Docugate
+                    </h3>
+                    <p>Img</p>
+                    <p>Lorem ips magnam,rum corporis. Id fugit maiores pariatur.</p>
+                    <p>Icon</p>
+                </li>
+            </ul>
             }
         </section>
         <section class="home__content-cards__card">
