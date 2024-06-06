@@ -50,9 +50,9 @@
         <section [class]="'home__content-cards__card home__content-cards__card--'+(state ? 'focused' : '')"
             (click)="setViewOpen()">
             <header class="home__content-cards__card__header">
-                <a class="home__content-cards__card__header__img">
+                <ul class="home__content-cards__card__header__img">
                     <img src="icon.svg" alt="">
-                </a>
+                </ul>
                 <p class="home__content-cards__card__header__title">Proyectos</p>
             </header>
             @if(!state){

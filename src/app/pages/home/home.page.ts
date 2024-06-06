@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
 })
 export class HomePage {
 
-  state: boolean = false;
+  state: boolean = true;
   setViewOpen(){
     this.state = true;
   }
