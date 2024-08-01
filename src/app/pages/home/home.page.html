@@ -1,111 +1,168 @@
 <main class="home">
+    <div class="home__background">
+        <div class="home__background__content">
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+            <div class="home__background__content__bubble"></div>
+        </div>
+    </div>
+    <div class="home__container">
 
-    <header class="home__header">
-        <aside class="home__header__menu">
-            aside
-        </aside>
-        <nav class="home__mode">
-            <button class="home__mode__button">
-                button
-            </button>
-        </nav>
-    </header>
-
-    <article [class]="'home__info home__info--'+(state ? 'focused' : '')" (click)="state=false">
-        <section class="home__info__content">
-            <a class="home__info__content__img">
-                <img src="foto.png" alt="">
-            </a>
-            <ul class="home__info__content__description">
-                <li class="home__info__content__description__card--title">Andres Diaz</li>
-                @if(!state){
-                <li class="home__info__content__description__card">Cargo: Desarrollador Frontend </li>
-                <li class="home__info__content__description__card">Edad: 22</li>
-                <li class="home__info__content__description__card">Estado: Disponible</li>
-                <li class="home__info__content__description__card">Experiencia: 3 años</li>
-                }
-            </ul>
-            @if(!state){
-            <ul class="home__info__content__nav">
-                <li>
-                    <img src="github.svg" alt="">
-                </li>
-                <li>
-                    <img src="instagram.svg" alt="">
-                </li>
-                <li>
-                    <img src="whatsapp.svg" alt="">
-                </li>
-                <li>
-                    <img src="comment.svg" alt="">
-                </li>
-            </ul>
-            }
-        </section>
-        @if(!state){
-        <a class="home__info__download">Descargar hoja de vida</a>
-        }
-    </article>
-    <article class="home__content-cards">
-        <section [class]="'home__content-cards__card home__content-cards__card--'+(state ? 'focused' : '')"
-            (click)="setViewOpen()">
-            <header class="home__content-cards__card__header">
-                <ul class="home__content-cards__card__header__img">
-                    <img src="icon.svg" alt="">
+        <header class="home__container__header">
+            <aside class="home__container__header__menu">
+                aside
+            </aside>
+            <nav class="home__container__mode">
+                <button class="home__container__mode__button">
+                    button
+                </button>
+            </nav>
+        </header>
+    
+        <article [class]="'home__container__info home__container__info--'+(state ? 'focused' : '')" (click)="state=false">
+            <section class="home__container__info__content">
+                <a class="home__container__info__content__img">
+                    <img src="foto.png" alt="">
+                </a>
+                <ul class="home__container__info__content__description">
+                    <li class="home__container__info__content__description__card--title">Andres Diaz</li>
+                    @if(!state){
+                    <li class="home__container__info__content__description__card">Cargo: Desarrollador Frontend </li>
+                    <li class="home__container__info__content__description__card">Edad: 22</li>
+                    <li class="home__container__info__content__description__card">Estado: Disponible</li>
+                    <li class="home__container__info__content__description__card">Experiencia: 3 años</li>
+                    }
                 </ul>
-                <p class="home__content-cards__card__header__title">Proyectos</p>
-            </header>
+                @if(!state){
+                <ul class="home__container__info__content__nav">
+                    <li>
+                        <img src="github.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="instagram.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="whatsapp.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="comment.svg" alt="">
+                    </li>
+                </ul>
+                }
+            </section>
             @if(!state){
-            <a class="home__content-cards__card__counter">3</a>
+            <a class="home__container__info__download">Descargar hoja de vida</a>
             }
-            @if(state){
-            <ul class="home__content-cards__card__wrapper">
-                <li class="home__content-cards__card__wrapper__card">
-                    <img src="photo.jpg" alt="" class="home__content-cards__card__wrapper__card__img">
-                    <a class="home__content-cards__card__wrapper__card__container">
-                        <p class="home__content-cards__card__wrapper__card__container__description">Lorem ips magnam,rum
-                            corporis.</p>
-                        <h3>
-                            Docugate
-                        </h3>
-                    </a>
-                </li>
-                <li class="home__content-cards__card__wrapper__card">
-                    <img src="photo.jpg" alt="" class="home__content-cards__card__wrapper__card__img">
-                    <a class="home__content-cards__card__wrapper__card__container">
-                        <p class="home__content-cards__card__wrapper__card__container__description">Lorem ips magnam,rum
-                            corporis.</p>
-                        <h3>
-                            Docugate
-                        </h3>
-                    </a>
-                </li>
-                <li class="home__content-cards__card__wrapper__card">
-                    <img src="photo.jpg" alt="" class="home__content-cards__card__wrapper__card__img">
-                    <a class="home__content-cards__card__wrapper__card__container">
-                        <p class="home__content-cards__card__wrapper__card__container__description">Lorem ips magnam,rum
-                            corporis.</p>
-                        <h3>
-                            Docugate
-                        </h3>
-                    </a>
-                </li>
-            </ul>
-            }
-        </section>
-        <section class="home__content-cards__card">
-            <a class="home__content-cards__card__counter">3</a>
-            <a class="home__content-cards__card__img">
-                <img src="icon-iniciar-trabajo-colaborativo.svg" alt="">
-            </a>
-            <p class="home__content-cards__card__title">Experiencia</p>
-        </section>
-        <section class="home__content-cards__card">
-            <a class="home__content-cards__card__counter">3</a>
-            <a class="home__content-cards__card__img">
-                <img src="icon-iniciar-trabajo-colaborativo.svg" alt="">
-            </a>
-            <p class="home__content-cards__card__title">Skills</p>
-        </section>
-    </article>
+        </article>
+        <article class="home__container__content-cards">
+            <section [class]="'home__container__content-cards__card home__container__content-cards__card--'+(state ? 'focused' : '')"
+                (click)="setViewOpen()">
+                <header class="home__container__content-cards__card__header">
+                    <ul class="home__container__content-cards__card__header__img">
+                        <img src="icon.svg" alt="">
+                    </ul>
+                    <p class="home__container__content-cards__card__header__title">Proyectos</p>
+                </header>
+                @if(!state){
+                <a class="home__container__content-cards__card__counter">3</a>
+                }
+                @if(state){
+                <ul class="home__container__content-cards__card__wrapper">
+                    <li class="home__container__content-cards__card__wrapper__card">
+                        <img src="photo.jpg" alt="" class="home__container__content-cards__card__wrapper__card__img">
+                        <a class="home__container__content-cards__card__wrapper__card__container">
+                            <p class="home__container__content-cards__card__wrapper__card__container__description">Lorem ips magnam,rum
+                                corporis.</p>
+                            <h3>
+                                Docugate
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="home__container__content-cards__card__wrapper__card">
+                        <img src="photo.jpg" alt="" class="home__container__content-cards__card__wrapper__card__img">
+                        <a class="home__container__content-cards__card__wrapper__card__container">
+                            <p class="home__container__content-cards__card__wrapper__card__container__description">Lorem ips magnam,rum
+                                corporis.</p>
+                            <h3>
+                                Docugate
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="home__container__content-cards__card__wrapper__card">
+                        <img src="photo.jpg" alt="" class="home__container__content-cards__card__wrapper__card__img">
+                        <a class="home__container__content-cards__card__wrapper__card__container">
+                            <p class="home__container__content-cards__card__wrapper__card__container__description">Lorem ips magnam,rum
+                                corporis.</p>
+                            <h3>
+                                Docugate
+                            </h3>
+                        </a>
+                    </li>
+                </ul>
+                }
+            </section>
+            <section class="home__container__content-cards__card">
+                <a class="home__container__content-cards__card__counter">3</a>
+                <a class="home__container__content-cards__card__img">
+                    <img src="icon-iniciar-trabajo-colaborativo.svg" alt="">
+                </a>
+                <p class="home__container__content-cards__card__title">Experiencia</p>
+            </section>
+            <section class="home__container__content-cards__card">
+                <a class="home__container__content-cards__card__counter">3</a>
+                <a class="home__container__content-cards__card__img">
+                    <img src="icon-iniciar-trabajo-colaborativo.svg" alt="">
+                </a>
+                <p class="home__container__content-cards__card__title">Skills</p>
+            </section>
+        </article>
+    </div>
+
 </main>
